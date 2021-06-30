@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title> {{title}} - All orders</title>
+    </head>
+    <body>
+        <h1>Games Order List</h1>
+        {% for order in orders %}
+        <div>
+            <p>Customer: <a href="/orders/{{orders.index(order)}}"> {{order.customer_name}} </a> </p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
